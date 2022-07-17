@@ -1,0 +1,719 @@
+@font-face {
+    font-family: Oceanfont;
+    font-style: normal;
+    src: url("/fonts/Simpsonfont.otf");
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #2a7787;
+    background-repeat: repeat;
+}
+
+.ocean-room-body {
+    position: relative;
+    background: url(/image/bgColor.png) no-repeat;
+    background-size: 100% 100%;
+    height: calc(100%);
+}
+
+.ocean-room-page {
+    position: absolute;
+    margin-top: 50px;
+    width: 1920px;
+    height: 1080px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Oceanfont;
+    font-size: xx-large;
+    color: #8a0850;
+}
+
+.ocean-room-centre-page {
+    position: relative;
+    background-image: url(/image/bgWater.png);
+    background-size: 100% 100%;
+    height: calc(100% - 100px);
+}
+
+.modalBlockImage1 {
+    top: 50%;
+    left: 34%;
+}
+
+.modalBlockImage2 {
+    top: 50%;
+    left: 66%;
+}
+
+.modalBlockTime {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 200px;
+    top: 12%;
+    left: 36%;
+
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 10;
+}
+
+.modalBlockDifference {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 400px;
+    top: 12%;
+    left: 67%;
+
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 10;
+}
+
+.modalBlockThanks {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 1050px;
+    top: 45%;
+    left: 52%;
+
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 10;
+}
+
+.modalBlockSendThanks {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 820px;
+    top: 80%;
+    left: 50%;
+
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 10;
+}
+
+.ButtonBathyscaphe2 {
+    display: block;
+    background: url(/image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 900px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    transform: rotate(0deg);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.ButtonBathyscaphe2:hover {
+    background: url(/image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 900px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    transform: rotate(5deg);
+}
+
+.ButtonBathyscaphe2Thanks {
+    display: block;
+    background: url(/image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 850px;
+    top: 600px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(0deg);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.ButtonBathyscaphe2Thanks:hover {
+    background: url(/image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 850px;
+    top: 600px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(5deg);
+}
+
+.ButtonSend {
+    display: block;
+    background: url(/image/mechanics/b_send.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 871px;
+    width: 400px;
+    height: 70px;
+    z-index: 15;
+    transition: 0.2s;
+    border: 0;
+    padding: 0;
+}
+
+.ButtonSend:hover {
+    background: url(/image/mechanics/b_send.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 870px;
+    width: 400px;
+    height: 72px;
+    border: 0;
+    padding: 0;
+}
+
+.ger {
+    display: block;
+    background-image: url(/image/mechanics/sea_bottom1.svg);
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 600px;
+
+    border: 0;
+    padding: 0;
+    z-index: 7;
+}
+
+.ger2 {
+    background-image: url(/image/mechanics/sea_bottom2.svg);
+}
+
+.difference1 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(463px + 354px);
+    top: calc(197px + 192px);
+    width: 55px;
+    height: 55px;
+
+    z-index: 10;
+}
+
+.difference1d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(463px + 968px);
+    top: calc(197px + 192px);
+    width: 55px;
+    height: 55px;
+
+    z-index: 10;
+}
+
+.difference2 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(365px + 354px);
+    top: calc(255px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference2d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(365px + 968px);
+    top: calc(255px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference3 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(370px + 354px);
+    top: calc(450px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference3d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(370px + 968px);
+    top: calc(450px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference4 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(455px + 354px);
+    top: calc(490px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference4d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(455px + 968px);
+    top: calc(490px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference5 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(465px + 354px);
+    top: calc(400px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference5d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(465px + 968px);
+    top: calc(400px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference6 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(100px + 354px);
+    top: calc(165px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference6d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(100px + 968px);
+    top: calc(165px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference7 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(165px + 354px);
+    top: calc(515px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference7d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(165px + 968px);
+    top: calc(515px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference8 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(530px + 354px);
+    top: calc(530px + 192px);
+    width: 80px;
+    height: 80px;
+
+    z-index: 10;
+}
+
+.difference8d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(530px + 968px);
+    top: calc(530px + 192px);
+    width: 80px;
+    height: 80px;
+
+    z-index: 10;
+}
+
+.difference9 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(120px + 354px);
+    top: calc(520px + 192px);
+    width: 70px;
+    height: 70px;
+
+    z-index: 11;
+}
+
+.difference9d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(120px + 968px);
+    top: calc(520px + 192px);
+    width: 70px;
+    height: 70px;
+
+    z-index: 11;
+}
+
+.difference10 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(245px + 354px);
+    top: calc(520px + 192px);
+    width: 30px;
+    height: 30px;
+
+    z-index: 10;
+}
+
+.difference10d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(245px + 968px);
+    top: calc(520px + 192px);
+    width: 30px;
+    height: 30px;
+
+    z-index: 10;
+}
+
+.difference11 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(240px + 354px);
+    top: calc(545px + 192px);
+    width: 30px;
+    height: 30px;
+
+    z-index: 10;
+}
+
+.difference11d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(240px + 968px);
+    top: calc(545px + 192px);
+    width: 30px;
+    height: 30px;
+
+    z-index: 10;
+}
+
+.difference12 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(580px + 354px);
+    top: calc(190px + 192px);
+    width: 40px;
+    height: 40px;
+
+    z-index: 10;
+}
+
+.difference12d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(580px + 968px);
+    top: calc(190px + 192px);
+    width: 40px;
+    height: 40px;
+
+    z-index: 10;
+}
+
+.difference13 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(105px + 354px);
+    top: calc(310px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference13d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(105px + 968px);
+    top: calc(310px + 192px);
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+}
+
+.difference14 {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(333px + 354px);
+    top: calc(95px + 192px);
+    width: 45px;
+    height: 45px;
+
+    z-index: 10;
+}
+
+.difference14d {
+    background: url(/image/mechanics/bubble.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    left: calc(333px + 968px);
+    top: calc(95px + 192px);
+    width: 45px;
+    height: 45px;
+
+    z-index: 10;
+}

@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Oceanfont;
+    font-style: normal;
+    src: url("fonts/Simpsonfont.otf");
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #2a7787;
+    background-repeat: repeat;
+    background-image: url(/../image/bgWater.png);
+    background-size: 100% 100%;
+    height: calc(100% - 100px);
+}
+
+.ocean-room-body {
+    position: relative;
+    background: url(/../image/bgColor.png) no-repeat;
+    background-size: 100% 100%;
+    height: calc(100%);
+}
+
+.ocean-room-page {
+    position: absolute;
+    margin-top: 50px;
+    width: 1920px;
+    height: 1080px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Oceanfont;
+    font-size: xx-large;
+    color: #8a0850;
+}
+
+.ocean-room-centre-page {
+    position: relative;
+    background-image: url(/../image/bgWater.png);
+    background-size: 100% 100%;
+    height: calc(100% - 100px);
+}
+
+.modalBlockGame1 {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 3;
+}
+
+.ButtonBathyscaphe2 {
+    display: block;
+    background: url(/../image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(0deg);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonBathyscaphe2:hover {
+    background: url(/../image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(10deg);
+}
+

@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Oceanfont;
+    font-style: normal;
+    src: url("fonts/Simpsonfont.otf");
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #2a7787;
+    background-repeat: repeat;
+}
+
+.ocean-room-body {
+    position: relative;
+    background: url(image/bgColor.png) no-repeat;
+    background-size: 100% 100%;
+    height: calc(100%);
+}
+
+.ocean-room-page {
+    position: absolute;
+    margin-top: 50px;
+    width: 1920px;
+    height: 1080px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Oceanfont;
+    font-size: xx-large;
+    color: #8a0850;
+}
+
+.ocean-room-centre-page {
+    position: relative;
+    background-image: url(image/bgWater.png);
+    background-size: 100% 100%;
+    height: calc(100% - 100px);
+}
+
+.ButtonCrab {
+    display: block;
+    background: url(image/fish/crab.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1150px;
+    top: 600px;
+    width: 300px;
+    height: 300px;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonCrab:hover {
+    background: url(image/fish/crab_.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1140px;
+    top: 590px;
+    width: 320px;
+    height: 320px;
+}
+
+.ButtonFish1 {
+    display: block;
+    background: url(image/fish/fish1.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 450px;
+    top: 450px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(15deg);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonFish1:hover {
+    background: url(image/fish/fish1_.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 450px;
+    top: 450px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(10deg);
+}
+
+.ButtonFish2 {
+    display: block;
+    background: url(image/fish/fish2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 900px;
+    top: 400px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(10deg) scale(-1, 1);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonFish2:hover {
+    background: url(image/fish/fish2_.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 900px;
+    top: 400px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg) scale(-1, 1);
+}
+
+.ButtonHorse {
+    display: block;
+    background: url(image/fish/horse.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(20deg);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonHorse:hover {
+    background: url(image/fish/horse_.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(25deg);
+}
+
+.ButtonBathyscaphe2 {
+    display: block;
+    background: url(image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1200px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.ButtonBathyscaphe2:hover {
+    background: url(image/fish/bathyscaphe2.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1200px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg);
+}
+
+.ButtonExit {
+    display: block;
+    background: url(image/mechanics/bubble_one.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 525px;
+    top: 800px;
+    width: 110px;
+    height: 110px;
+    transform: rotate(20deg) scale(-1, 1);
+    z-index: 6;
+    transition: 0.5s;
+}
+
+.ButtonExit:hover {
+    background: url(image/mechanics/bubble_one.svg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 515px;
+    top: 790px;
+    width: 130px;
+    height: 130px;
+    transform: rotate(10deg) scale(-1, 1);
+}
+
+.modal {
+    position: fixed;
+    width: 550px;
+    top: 27%;
+    left: 47%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 7;
+}
+
+.modalBlockExit {
+    position: fixed;
+    width: 150px;
+    top: 79%;
+    left: 31%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #00000000;
+    color: #ffffff;
+    font-family: Oceanfont;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 3;
+}
